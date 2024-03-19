@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   background-color: #221f1f;
+  
+}
+#st{
+  margin-inline: 10px;
 }
 .bgg {
   background-color: #221f1f;
@@ -106,5 +110,14 @@ footer {
 }
 
 .col img:hover {
+  transform: scale(1.1);
+}
+#movie-poster {
+  margin: 0;
+  transition: transform 0.3s ease;
+  height:400px;
+}
+
+#movie-poster:hover {
   transform: scale(1.1);
 }

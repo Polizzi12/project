@@ -2,13 +2,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-class Main extends Component {
+class Maint extends Component {
   state = {
     searchedMovies: [],
   };
 
   componentDidMount() {
-    fetch("http://www.omdbapi.com/?apikey=752926e9&s=harry%20potter")
+    fetch("http://www.omdbapi.com/?apikey=752926e9&s=Marvel")
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -47,4 +47,4 @@ class Main extends Component {
   
 }
 
-export default Main;
+export default Maint;
