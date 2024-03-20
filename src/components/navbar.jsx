@@ -15,7 +15,7 @@ function Navigation() {
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="me-auto">
             <Nav.Link href="#" className="fw-bold">Home</Nav.Link>
-            <Nav.Link href="#" className="fw-bold">TV Shows</Nav.Link>
+            <Nav.Link href="/tvshows" className="fw-bold">TV Shows</Nav.Link>
             <Nav.Link href="#" className="fw-bold">Movies</Nav.Link>
             <Nav.Link href="#" className="fw-bold">Recently Added</Nav.Link>
             <Nav.Link href="#" className="fw-bold">My List</Nav.Link>

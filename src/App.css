@@ -3,6 +3,10 @@
   background-color: #221f1f;
   
 }
+.post{
+  width: 100%;
+  height: auto;
+}
 #st{
   margin-inline: 10px;
 }
@@ -17,7 +21,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+#tt{
+  color:white;
+  margin-inline: 5px;
+  text-align: left;
+  padding-left: 30px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

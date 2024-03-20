@@ -7,18 +7,24 @@ import Footer from './components/footer';
 import Main from './components/main';
 import Maind from './components/main2';
 import Maint from './components/main3';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import Tvshows from './components/tvshows';
+import Detail from './components/detail';
 
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
     <Navigation/>
-    <Subnav/>
-    <Main/>
-    <Maind/>
-    <Maint/>
+    <Routes>
+    <Route path="/" element={<> <Main /><Maind /><Maint /></>} />
+    <Route path="/tvshows" element={<><Subnav/> <Tvshows/></>} /> {/* Ho messo Subnav nella pagina tvshows perché pensavo fosse più corretto, anche se nel layout originale si trovava nella pagina principale. */}
+    <Route path="/detail" element={<><Detail/></>} /> 
+    </Routes>
     <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 
